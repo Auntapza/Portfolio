@@ -1,0 +1,25 @@
+.banner {
+  padding: 5rem;
+  transition: all .8s;
+  position: relative;
+  overflow: hidden; }
+  .banner:hover h1 {
+    transform: scale(1.1); }
+  .banner::after {
+    content: '';
+    width: 10%;
+    height: 100%;
+    background-color: #ffffff9a;
+    position: absolute;
+    left: -40%;
+    top: 0;
+    transform: skewX(-50deg);
+    transition: all .8s; }
+  .banner:hover::after {
+    transform: translateX(1000%) skewX(-50deg) scale(1); }
+  .banner .contaner h1 {
+    font-size: 90px;
+    transition: all .5s;
+    cursor: default; }
+
+/*# sourceMappingURL=index.css.map */

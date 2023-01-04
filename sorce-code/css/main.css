@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap");
+body {
+  font-family: 'PT Sans', sans-serif;
+  overflow-x: hidden; }
+
+.contaner {
+  margin: 2rem auto;
+  max-width: 1800px;
+  padding: 0 2rem; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+
+header {
+  border-bottom: 1px solid #4ecca3;
+  padding: .5rem;
+  background-color: #fff; }
+  header .contaner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px; }
+    header .contaner .logo a {
+      display: flex;
+      align-items: center; }
+      header .contaner .logo a img {
+        width: 50px; }
+      header .contaner .logo a h1 {
+        font-size: 35px; }
+    header .contaner nav ul {
+      display: flex;
+      gap: 1.6rem; }
+      header .contaner nav ul li {
+        position: relative; }
+        header .contaner nav ul li::after {
+          content: '';
+          width: 5px;
+          height: 5px;
+          background-color: #4ecca3;
+          position: absolute;
+          left: 50%;
+          bottom: -10px;
+          transform: translateX(-50%);
+          transition: width .25s ease; }
+        header .contaner nav ul li:hover::after {
+          width: 100%; }
+    header .contaner .social ul {
+      display: flex;
+      gap: 1rem; }
+    header .contaner .hamberger {
+      display: none; }
+  header aside {
+    position: fixed;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 2.5rem;
+    padding-left: 1.5rem;
+    box-shadow: -2px -1px 12px 2px rgba(0, 0, 0, 0.2);
+    font-size: 35px;
+    min-width: 350px;
+    max-width: 20%;
+    height: 500px;
+    left: 100%;
+    z-index: 100; }
+    header aside ul {
+      display: grid;
+      gap: 20px; }
+      header aside ul li {
+        transition: all .25s ease; }
+        header aside ul li:hover {
+          color: #4ecca3;
+          transform: translateX(10px); }
+    header aside .profile {
+      position: absolute;
+      bottom: 20px;
+      display: flex;
+      gap: .5rem;
+      align-items: center; }
+      header aside .profile img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%; }
+      header aside .profile h1 {
+        word-wrap: none; }
+
+/*# sourceMappingURL=main.css.map */
