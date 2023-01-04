@@ -1,0 +1,33 @@
+/* hightlight nav bar */
+nav .center ul li:nth-child(2) a::after {
+  width: 100%; }
+
+section {
+  margin-top: 5rem; }
+  section .contener {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    section .contener .personal-info h1 {
+      font-size: 35px;
+      text-transform: capitalize;
+      margin-bottom: 2rem;
+      position: relative; }
+      section .contener .personal-info h1::before {
+        content: '';
+        width: 5px;
+        height: 100%;
+        background-color: #62d2ae;
+        position: absolute;
+        left: -10px; }
+    section .contener .personal-info .description {
+      position: relative;
+      left: 7%; }
+      section .contener .personal-info .description p {
+        font-size: 20px; }
+    section .contener .education {
+      margin-top: 3rem; }
+      section .contener .education h1::before {
+        background-color: #777777; }
+
+/*# sourceMappingURL=about.css.map */
