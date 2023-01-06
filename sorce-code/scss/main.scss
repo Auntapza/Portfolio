@@ -5,6 +5,9 @@
 $pimary-color:#4ecca3 ;
 
 // css 
+* {
+    scroll-behavior: smooth;
+}
 body {
     font-family: 'PT Sans', sans-serif;
     overflow-x: hidden;
@@ -132,6 +135,50 @@ header {
             }
             h1 {
                 word-wrap: none;
+            }
+        }
+    }
+}
+
+// footer style 
+footer {
+    border-top: 1px solid $pimary-color;
+    margin-top: 2rem;
+
+    .contaner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .footer-nav {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            text-align: end;
+            gap: 1.5rem;
+
+            a {
+                display: flex;
+                align-items: center;
+
+                img {
+                    width: 50px;
+                }
+                span {
+                    font-size: 25px;
+                }
+            }
+            ul {
+                display: grid;
+                grid-gap: 1rem;
+                li {
+                    font-size: 25px;
+                    transition: color .25s , transform .25s;
+                    &:hover {
+                        transform: translateX(10%);
+                        color: $pimary-color;
+                    }
+                }
             }
         }
     }

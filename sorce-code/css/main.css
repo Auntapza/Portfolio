@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap");
+* {
+  scroll-behavior: smooth; }
+
 body {
   font-family: 'PT Sans', sans-serif;
   overflow-x: hidden; }
@@ -94,5 +97,35 @@ header {
         border-radius: 50%; }
       header aside .profile h1 {
         word-wrap: none; }
+
+footer {
+  border-top: 1px solid #4ecca3;
+  margin-top: 2rem; }
+  footer .contaner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    footer .contaner .footer-nav {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      text-align: end;
+      gap: 1.5rem; }
+      footer .contaner .footer-nav a {
+        display: flex;
+        align-items: center; }
+        footer .contaner .footer-nav a img {
+          width: 50px; }
+        footer .contaner .footer-nav a span {
+          font-size: 25px; }
+      footer .contaner .footer-nav ul {
+        display: grid;
+        grid-gap: 1rem; }
+        footer .contaner .footer-nav ul li {
+          font-size: 25px;
+          transition: color .25s , transform .25s; }
+          footer .contaner .footer-nav ul li:hover {
+            transform: translateX(10%);
+            color: #4ecca3; }
 
 /*# sourceMappingURL=main.css.map */
