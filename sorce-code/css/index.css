@@ -74,7 +74,7 @@ section {
       section article:first-child .contaner .text p {
         font-size: 25px; }
     section article:first-child .contaner .content1-img {
-      width: 50%;
+      width: 40%;
       background-image: url(/sorce-code/image/info-pic.jpg);
       height: 250px;
       border: 5px solid #000;
