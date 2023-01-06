@@ -1,8 +1,6 @@
 //  nav bar hightlight
-header nav ul li:nth-child(1) {
-    &::after {
-        width: 100%;
-    }
+header nav ul li:nth-child(1)::after {
+    width: 100%;
 }
 // banner style
 .banner {
@@ -57,6 +55,20 @@ header nav ul li:nth-child(1) {
                     background-size: cover;
                     background-position: 50%;
                     transition: transform .5s;
+                }
+            }
+        }
+        a {
+            align-self: flex-end;
+            z-index: 10;
+
+            img {
+                height: 75px;
+                transform: rotate(90deg);
+                transition: opacity .25s ease;
+    
+                &:hover {
+                    opacity: 50%;
                 }
             }
         }
