@@ -104,7 +104,7 @@ footer {
   footer .contaner {
     display: flex;
     justify-content: space-between;
-    align-items: center; }
+    align-items: flex-end; }
     footer .contaner .footer-nav {
       display: flex;
       flex-direction: column;
