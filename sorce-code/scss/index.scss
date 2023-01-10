@@ -93,7 +93,7 @@ section {
             .text {
                 display: grid;
                 gap: 2rem;
-                width: 40%;
+                max-width: 40%;
     
                 h1 {
                     font-size: 35px;
@@ -104,7 +104,7 @@ section {
                 }
             }
             .content1-img {
-                width: 40%;
+                min-width: 40%;
                 background-image: url(/sorce-code/image/info-pic.jpg);
                 height: 250px;
                 border: 5px solid #000;
@@ -113,6 +113,54 @@ section {
                 position: absolute;
                 right: 0;
             }
+        }
+    }
+}
+
+@media only screen and (max-width:1300px) {
+    .banner-img,
+    .banner a {
+        display: none;
+    }
+}
+@media only screen and (max-width:918px) {
+    .banner-text h1 {
+        font-size: 75px !important;
+    }
+}
+@media only screen and (max-width:834px) {
+    article:first-child {
+        .contaner {
+            justify-content: center !important;
+            .text {
+                max-width: 60% !important;
+                position: relative;
+                text-align: center;
+
+                &::before {
+                    content: '';
+                    background-color: #000;
+                    width: 100%;
+                    height: 3px;
+                    position: absolute;
+                    top: -20px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+            .content1-img {
+                display: none;
+            }
+            
+        }
+    }
+}
+@media only screen and (max-width:700px) {
+    .banner {
+        padding: 2rem;
+
+        .banner-text h1 {
+            font-size: 50px !important;
         }
     }
 }
