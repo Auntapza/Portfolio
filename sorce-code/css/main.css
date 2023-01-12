@@ -66,7 +66,7 @@ header {
       display: none; }
   header aside {
     position: fixed;
-    background-color: #fff;
+    background-color: #ffffff;
     border-radius: 20px;
     padding: 2.5rem;
     padding-left: 1.5rem;
@@ -147,7 +147,7 @@ footer {
       height: 5px;
       border-radius: 25px; }
   header .contaner .hamberger .bar {
-    transition: transform .5s ease, opacity .25s ease; }
+    transition: transform .5s ease, opacity .25s .3s ease; }
   header .contaner .hamberger .bar.active:nth-child(1) {
     transform: rotate(-315deg); }
   header .contaner .hamberger .bar.active:nth-child(2) {
@@ -155,8 +155,10 @@ footer {
   header .contaner .hamberger .bar.active:nth-child(3) {
     transform: rotate(315deg); } }
 @media only screen and (max-width: 425px) {
-  header .contaner .logo h1 {
-    font-size: 25px !important; } }
+  header {
+    padding: .1rem; }
+    header .contaner .logo h1 {
+      font-size: 25px !important; } }
 aside.active {
   left: 0; }
 

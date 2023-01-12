@@ -98,7 +98,7 @@ header {
     // nav toggle
     aside {
         position: fixed;
-        background-color: #fff;
+        background-color: #ffffff;
         border-radius: 20px;
         padding: 2.5rem;
         padding-left: 1.5rem;
@@ -210,7 +210,7 @@ footer {
             }
             .hamberger {
                 .bar {
-                    transition: transform .5s ease, opacity .25s ease;
+                    transition: transform .5s ease, opacity .25s .3s ease;
                 }
 
                 .bar.active:nth-child(1) {
@@ -228,6 +228,7 @@ footer {
 }
 @media only screen and (max-width:425px) {
     header {
+        padding: .1rem;
         .contaner {
             .logo {
                 h1 {

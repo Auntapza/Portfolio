@@ -59,7 +59,9 @@ header nav ul li:nth-child(1)::after {
     transform: scale(1.1); }
 
 section {
-  margin: 10rem 0; }
+  margin: 10rem 0;
+  display: grid;
+  gap: 5rem; }
   section article:first-child .contaner {
     display: flex;
     justify-content: space-between;
@@ -82,6 +84,59 @@ section {
       background-position: 0% 30%;
       position: absolute;
       right: 0; }
+  section article:nth-child(2) .contaner > h1 {
+    text-align: center;
+    font-size: 4em;
+    position: relative;
+    margin-bottom: 3.5rem; }
+    section article:nth-child(2) .contaner > h1::before {
+      content: '';
+      background-color: #000;
+      width: 30%;
+      position: absolute;
+      height: 5px;
+      border-radius: 25px;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%); }
+    section article:nth-child(2) .contaner > h1::after {
+      content: '';
+      background-color: #000;
+      width: 30%;
+      position: absolute;
+      height: 5px;
+      border-radius: 25px;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%); }
+  section article:nth-child(2) .contaner .skill {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    color: #ffffff;
+    column-gap: 10em;
+    row-gap: 5em; }
+    section article:nth-child(2) .contaner .skill .skill-box {
+      background-color: #4ecca2bb;
+      border-radius: 25px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100px;
+      padding: 3.2rem;
+      gap: 25px;
+      box-shadow: 1px 1px 10px 5px #d6d6d6;
+      border: 3px solid #fff;
+      cursor: pointer;
+      transition: transform .8s ease, box-shadow .8s ease;
+      outline: 1px solid #7a7a7a70; }
+      section article:nth-child(2) .contaner .skill .skill-box:hover {
+        transform: scale(1.1);
+        box-shadow: 1px 1px 25px 10px #d6d6d6; }
+      section article:nth-child(2) .contaner .skill .skill-box h1 {
+        font-size: 35px; }
+      section article:nth-child(2) .contaner .skill .skill-box p {
+        font-size: 25px; }
 
 @media only screen and (max-width: 1300px) {
   .banner-img,
@@ -91,13 +146,13 @@ section {
   .banner-text h1 {
     font-size: 75px !important; } }
 @media only screen and (max-width: 834px) {
-  article:first-child .contaner {
+  section article:first-child .contaner {
     justify-content: center !important; }
-    article:first-child .contaner .text {
+    section article:first-child .contaner .text {
       max-width: 60% !important;
       position: relative;
       text-align: center; }
-      article:first-child .contaner .text::before {
+      section article:first-child .contaner .text::before {
         content: '';
         background-color: #000;
         width: 100%;
@@ -106,12 +161,23 @@ section {
         top: -20px;
         left: 50%;
         transform: translateX(-50%); }
-    article:first-child .contaner .content1-img {
-      display: none; } }
+    section article:first-child .contaner .content1-img {
+      display: none; }
+  section article:nth-child(2) .skill {
+    grid-template-columns: 1fr !important; } }
 @media only screen and (max-width: 700px) {
   .banner {
     padding: 2rem; }
     .banner .banner-text h1 {
-      font-size: 50px !important; } }
+      font-size: 50px !important; }
+
+  section article:nth-child(2) .contaner > h1 {
+    font-size: 3em; } }
+@media only screen and (max-width: 1200px) {
+  section .contaner .skill {
+    grid-template-columns: repeat(2, 1fr) !important; } }
+@media only screen and (max-width: 550px) {
+  section article:nth-child(2) .contaner > h1 {
+    font-size: 2em; } }
 
 /*# sourceMappingURL=index.css.map */
