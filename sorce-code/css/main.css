@@ -4,7 +4,8 @@
 
 body {
   font-family: 'PT Sans', sans-serif;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  min-height: 100vh; }
 
 .contaner {
   margin: 2rem auto;
@@ -101,7 +102,10 @@ header {
 
 footer {
   border-top: 1px solid #4ecca3;
-  margin-top: 2rem; }
+  margin-top: 2rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%; }
   footer .contaner {
     display: flex;
     justify-content: space-between;
