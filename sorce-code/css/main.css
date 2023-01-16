@@ -103,8 +103,6 @@ header {
 footer {
   border-top: 1px solid #4ecca3;
   margin-top: 2rem;
-  position: absolute;
-  bottom: 0;
   width: 100%; }
   footer .contaner {
     display: flex;
